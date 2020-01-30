@@ -21,6 +21,23 @@ Output:
   [1,2],
   []
 ]
+
+solution: solved using backtracking
+
+1) An empty array ditinct is initialized.
+2) Inside subset method another temporary array is initialized to add each element and then backtrack function is called.
+3) Inside the backtrack for loop is started from the 0th element added to list and recurisvely next element is called and added into the list.  
+[1]
+[1, 2]
+[1, 2, 3]
+[1, 3]
+[2]
+[2, 3]
+[3]
+
+Time complexity:O(N * 2^N) to generate all subsets and copy them in to lists
+Space Complexity: O(2^N) exactly the subsets formed 
+
 ## Problem2
 
 Palindrome Partitioning(https://leetcode.com/problems/palindrome-partitioning/)
